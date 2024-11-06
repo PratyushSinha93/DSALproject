@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Leaderboard System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Leaderboard</h1>
+        <div class="form-container">
+            <h2>Add Player</h2>
+            <form id="addPlayerForm">
+                <input type="text" id="playerName" placeholder="Enter player's name" required>
+                <input type="number" id="playerScore" placeholder="Enter player's score" required>
+                <button type="submit">Add Player</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Delete Player</h2>
+            <form id="deletePlayerForm">
+                <input type="text" id="deletePlayerName" placeholder="Enter player's name to delete" required>
+                <button type="submit">Delete Player</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Search Player</h2>
+            <form id="searchPlayerForm">
+                <input type="text" id="searchPlayerName" placeholder="Enter player's name to search" required>
+                <button type="submit">Search Player</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Leaderboard</h2>
+            <button id="viewLeaderboardBtn">View Leaderboard</button>
+            <div id="leaderboardDisplay">
+                <!-- Leaderboard will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
